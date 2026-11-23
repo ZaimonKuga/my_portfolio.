@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Đỗ Nhật Tân</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="projects.html">Dự án</a>
+        <a href="contact.html" class="active">Liên hệ</a>
+    </nav>
+
+    <header>
+        <h1>Liên hệ</h1>
+        <p>Gửi tin nhắn cho mình</p>
+    </header>
+
+    <section>
+        <!-- Thay YOUR_FORM_ID bằng mã form của bạn trên formspree.io -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label>Họ tên
+                <input type="text" name="name" required>
+            </label>
+            <label>Email
+                <input type="email" name="email" required>
+            </label>
+            <label>Nội dung
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+    </section>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
